@@ -1,0 +1,66 @@
+.box{
+	width: 300px;
+	height:200px;
+	background-color: red;
+	margin:auto;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-lef:-150px;
+	margin-top:-150px;
+	transition: 2s;
+}
+
+.box:hover{
+	transform: rotate(45deg);
+	background-color: green;
+
+
+}
+
+.box1{
+	width: 300px;
+	height:200px;
+	background-color: red;
+	animation: moli 3s infinite;
+	position: absolute;
+
+}
+
+@keyframes moli{
+	0%{
+top:0;
+left:0;
+background-color: pink;
+transform: rotate(45deg);
+
+	}
+
+	25%{
+		top:100px;
+		left:0px;
+background-color:blueviolet;
+transform: rotate(100deg) scale(1.2);
+	}
+
+	50%{
+		top:50px;
+		left:500px;
+background-color: greenyellow;
+transform: rotateX(45deg);
+
+	}
+	75%{
+		top: 225px;
+		left:650px;
+transform: rotateY(75deg) scale(0.5);
+
+	}
+	100%{
+		top:500px;
+		left:0;
+background-color: limegreen;
+transform: rotate(45deg) scale(2.5);
+
+	}
+}
